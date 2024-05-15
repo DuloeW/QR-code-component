@@ -1,0 +1,108 @@
+:root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100dvh;
+    background-color: #F2F2F2;
+    display: grid;
+    place-items: center;
+}
+
+.containner-global {
+    width: 320px;
+    height: 497px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+}
+
+.containner-qr-bublle {
+    position: relative;
+    width: 100%;
+    height: 288px;
+    border-radius: 10px;
+    background-color: #2C7DFA;
+    overflow: hidden;
+}
+
+.containner-qr-bublle img {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    z-index: 50;
+    transform: translate(-10%, 22%);
+}
+
+
+.containner-qr-bublle .buble1 {
+    position: absolute;
+    width: 290px;
+    height: 290px;
+    opacity: 0.09;
+    border-radius: 100%;
+    background-color: white;
+    top: -90px;
+    left: -80px;
+}
+
+.containner-qr-bublle .buble2 {
+    position: absolute;
+    width: 290px;
+    height: 290px;
+    opacity: 0.09;
+    border-radius: 100%;
+    background-color: white;
+    bottom: -170px;
+    right: -160px;
+}
+
+.containner-desc-qr {
+    padding: 0px 30px;
+}
+
+.containner-desc-qr p:first-child {
+    font-size: 23px;
+    font-weight: bolder;
+    text-align: center;
+    letter-spacing: .5px;
+    color: #1F314F;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.containner-desc-qr p:last-child {
+    text-align: center;
+    color: #7D889E;
+    font-size: 17px;
+    letter-spacing: .5;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+@media (max-width: 400px) {
+    .containner-qr-bublle .buble1 {
+        background-color: #071c3a;
+        position: absolute;
+        width: 290px;
+        height: 290px;
+        opacity: 0.15;
+        border-radius: 100%;
+        top: -90px;
+        left: -80px;
+    }
+    
+    .containner-qr-bublle .buble2 {
+        background-color: #0f3369;
+        position: absolute;
+        width: 290px;
+        height: 290px;
+        opacity: 0.15;
+        border-radius: 100%;
+        bottom: -170px;
+        right: -160px;
+    }
+}
